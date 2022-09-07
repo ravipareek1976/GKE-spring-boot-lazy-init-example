@@ -2,8 +2,8 @@
 Demo Application : Spring Boot Sample COde , Docker, GKE, JAR File, from , GCP temiranl, no need of anything at laptop.
 Direct development on GCP.
 # commands used on GCP CLI
-put the Jar file in DOcker image and push in container registry of GCP
- ./mvnw com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/one-one/springboot-docker:v1
+put the Jar file in DOcker image and push in container registry of GCP , this command worked successfully
+ ./mvnw com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/springboot-docker:v1
 
 # Spring Boot Lazy Initialization example
 
