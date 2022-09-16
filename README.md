@@ -15,6 +15,10 @@ Direct development on GCP.
 ## Alternatives
 - `http://localhost:8080/lazy` - Uses `LazyController` and `LazyService` which can be marked manually as `@Lazy` for specific Beans
 # commands used on GCP CLI
+
+./mvnw clean install  // for maven buld creating jar.
+java -jar target/spring-boot-lazy-init-example 0.0.1-SNAPSHOT   //  running the and test it on local host
+
 put the Jar file in DOcker image and push in container registry of GCP , this command worked successfully
  ./mvnw com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/springboot-docker:v1
  
