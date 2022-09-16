@@ -43,7 +43,11 @@ verify if pod is created
  kubectl get services
 
 for accessing now need to expose it to load balancer (good practive to put configuration with yaml, but here through the command line only)
-kubectl expose deployment  spring-boot-example  --type=LoadBalancer
+kubectl expose deployment  nginx-1  --type=LoadBalancer
+
+command for scaling to deployments
+kubectl scale deployments nginx-1 --replicas=2
+
 
 reference of tbis video
 https://www.youtube.com/watch?v=jSYxW_c3M_E
