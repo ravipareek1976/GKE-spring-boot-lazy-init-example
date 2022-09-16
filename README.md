@@ -1,3 +1,4 @@
+ # Note this successfully implemented only one change  instead of creating "deployment "via CLI, i created with COnsole.
 # Demo for Docker, JAR Running Terminal,
 Demo Application : Spring Boot Sample COde , Docker, GKE, JAR File, from , GCP temiranl, no need of anything at laptop.
 Direct development on GCP.
@@ -33,7 +34,7 @@ but creating deployment first verify if Docker image created at GCP is working s
 by clicking web preview
 docker run -ti --rm -p 8080:8080 gcr.io/$GOOGLE_CLOUD_PROJECT/springboot-docker:v1
 
-create deployment
+create deployment , if this does not work use GUI console for me via command line did not work
 kubectl run springboot-docker --image  gcr.io/$GOOGLE_CLOUD_PROJECT/springboot-docker:v1 --port=8080
 
 verify if pod is created
